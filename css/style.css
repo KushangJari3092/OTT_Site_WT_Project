@@ -1,0 +1,306 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  /* font-family: Raleway, sans-serif; */
+}
+
+:root {
+  --primary-color: #222831;
+  --secondary-color: #ededed;
+  --background-color: #5cdb95;
+  --nav-color: #3c8cf0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  transition: 0.1s;
+  /* background-color: var(--background-color); */
+}
+
+/* .siderbar {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  z-index: -1;
+} */
+
+/* CSS For Slidebar */
+
+.moviecontainer .list-title {
+  color: var(--primary-color);
+  margin: 20px;
+}
+
+#list {
+  display: flex;
+  height: 250px;
+  align-items: center;
+}
+
+.movieitem {
+  margin-left: 10px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  transition: 0.5s;
+  height: 250px;
+  width: 220px;
+  transform: translate(0);
+  position: relative;
+}
+
+.movieitem1 img,
+.movieitem img {
+  border-radius: 2%;
+  height: 200px;
+  width: 200px;
+  transition: 0.5s;
+}
+
+.movieitem:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.movieitem button {
+  height: 35px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #00adb5;
+  border-width: 0;
+  border-radius: 10%;
+  transition: 0.3s;
+}
+
+.movieitem button:hover {
+  font-size: 16px;
+}
+
+.movieitem .movietitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#arrow {
+  font-size: 80px;
+  color: #222831;
+  position: absolute;
+  top: 260px;
+  right: 0;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+#arrow:hover {
+  opacity: 0.8;
+}
+
+.wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90.9%;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+
+.info p {
+  color: #00adb5;
+}
+.info > * {
+  transform: translateY(50px);
+  transition: transform 0.5s;
+}
+
+.info:hover > * {
+  transform: translateY(20px);
+}
+.info:hover {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(53, 53, 55, 0.6867121848739496) 56%,
+    rgba(138, 133, 136, 0) 95%
+  );
+  opacity: 1;
+}
+
+/* ABOUT PAGE CSS */
+
+.about {
+  position: absolute;
+  width: 100%;
+  color: var(--secondary-color);
+}
+.developers {
+  position: absolute;
+  width: 100%;
+  margin-top: 15%;
+  color: var(--secondary-color);
+}
+
+.about h2,
+.developers h2 {
+  font-size: 40px;
+}
+
+.about p,
+.developers p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 58px;
+  float: left;
+  position: relative;
+  margin-left: 115px;
+}
+
+/* CSS FOR BACKGROUND */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+}
+
+.text ul {
+  height: 50px;
+  display: flex;
+  float: right;
+}
+
+.text ul li {
+  display: inline-block;
+  padding: 40px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.text h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  margin-top: 20%;
+}
+
+.animation {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.animation .boxes {
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.boxes li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: animate 20s linear infinite;
+}
+
+.boxes li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.boxes li:nth-child(2) {
+  left: 86%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+.boxes li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 0s;
+  animation-duration: 5.5s;
+}
+.boxes li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.boxes li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1269px) {
+  /* .right .material-icons-outlined {
+    display: none;
+  } */
+  /*
+  FOR THIRD BREAKPOINT
+  .middle {
+    display: none;
+  }
+  */
+}

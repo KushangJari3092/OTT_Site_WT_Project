@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play</title>
+</head>
+
+<!-- /*link for slider*/ -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+
+<!-- link of css file -->
+<link rel="stylesheet" href="../css/play.css">
+
+<style>
+    @import 'https://fonts.googleapis.com/css?family=Raleway';
+    @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap');
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: #121b25;
+        border: 0px solid rebeccapurple;
+    }
+</style>
+
+<body>
+    <div id="box">
+
+        <header>
+
+            <img src="logo.png" alt="" id="logo">
+            <div class="navbar borderYtoX">
+
+                <a href="index.html">HOME</a>
+                <a href="#">WEB SHOWS</a>
+                <a href="movies.html">MOVIES</a>
+                <a href="about.html">ABOUT</a>
+
+            </div>
+
+            <a href="play.html"><img src="../Images/login.png" alt="login" id="login"></a>
+
+            <label class="switch">
+                <input type="checkbox" id="darkmode">
+                <span class="slider round"></span>
+            </label>
+
+        </header>
+
+        <!-- /* 1st scroll row -->
+
+        <div id="title">
+            Title
+        </div>
+        <div class="iframe">
+
+            <iframe src="https://www.youtube.com/embed/-wOsSh2-zFk" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="vdo"></iframe>"
+        </div>
+
+        <h3>
+            About Show
+        </h3>
+
+        <div id="infocontent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos alias obcaecati architecto, ut eveniet consequuntur exercitationem facere debitis reiciendis modi asperiores ipsam! Doloremque quidem at est nesciunt vero possimus?
+        </div>
+
+        <div class="otherinfo">
+
+            Language : 
+            <div id="language">
+                Hindi
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+<!-- /* slider js*/ -->
+<script src="../JS/movieinfo.js"></script>
+<script src="home.js"></script>
+<script src="lightmode.js"></script>
+
+</html>

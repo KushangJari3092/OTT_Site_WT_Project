@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto Slab", serif;
+  height: 100%;
+  background-color: #661ca3;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(146, 145, 145);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+center h1 {
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shows {
+  width: 300px;
+  height: 640px;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  margin: 20px 20px 20px 20px;
+  box-shadow: 0 0 20px black;
+  transition: 0.5s;
+}
+
+.shows:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.shows span {
+  font-size: 20px;
+  margin: 5px;
+  margin-left: 180px;
+}
+.summary {
+  overflow: auto;
+  margin-bottom: 2px;
+}
+
+.title {
+  color: black;
+}
+
+.shows button {
+  width: 50px;
+}
+
+.shows button {
+  width: 100px;
+  margin-top: 4/3px;
+  margin-left: 30px;
+  padding: 3px 8px;
+  border: 2px solid blueviolet;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.shows button:hover {
+  background-color: lightpink;
+  color: black;
+}

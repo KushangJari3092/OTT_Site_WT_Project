@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="icon" href="../Images/OTTplayer.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>index</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- link of css file -->
+    <link rel="stylesheet" href="home.css">
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Raleway';
+        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #121b25;
+            ;
+            border: 0px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="navbar borderYtoX">
+                <a href="index.html" id="active">HOME</a>
+                <a href="TV_Shows.html" id="inactive">WEB SHOWS</a>
+                <a href="movies.html" id="inactive">MOVIES</a>
+                <a href="about.html" id="inactive">ABOUT</a>
+
+            </div>
+            <a href="play.html"><img src="../Images/login.png" alt="login" id="login"></a>
+
+            <label class="switch">
+                <input type="checkbox" id="darkmode">
+                <span class="slider round"></span>
+            </label>
+        </header>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"
+                style="background-image: url(https://www.filmywapzone.com/wp-content/uploads/2021/07/Asur-2-Web-Series-Release-Date-Cast-Trailer-Poster-All-Episodes-Watch-Online-Free-Download.jpg);">
+            </div>
+            <div class="carousel-cell"
+                style="background-image: url(https://1.bp.blogspot.com/-f6IBltxvMLQ/Xs4JmFyES6I/AAAAAAAAMi8/FJ9oQ3x2BPoFaA9bAV19jc1p594nY1cFQCLcBGAsYHQ/s1600/ek_thi_begum_online_5998399-m.jpg);">
+            </div>
+            <div class="carousel-cell"
+                style="background-image: url(https://th.bing.com/th/id/OIP.o8BbACIDERluYgnm3iwouwHaEn?pid=ImgDet&rs=1);">
+            </div>
+            <div class="carousel-cell"
+                style="background-image: url(https://www.iwmbuzz.com/wp-content/uploads/2019/06/mirzapur-the-best-indian-web-series-made-till-date.jpg);">
+            </div>
+
+        </div>
+        <div class="moviecontainer">
+            <h1 class="list-title">
+                FEATURED - FOR YOU
+            </h1>
+            <div class="wrapper">
+                <div id="list">
+                    <a href="https://www.youtube.com/watch?v=-wOsSh2-zFk">
+                        <div class="movieitem">
+
+                            <img src="" alt="" class="movieimage">
+                            <!-- <div class="info"> -->
+                            <!-- <p class="moviedesc"></p> -->
+                            <!-- <button class="watch">WATCH</button> -->
+                            <!-- </div> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="moviecontainer">
+            <h1 class="list-title">
+                FEATURED - FOR YOU
+            </h1>
+            <div class="wrapper">
+                <div id="list">
+                    <div class="movieitem">
+
+                        <a href="play.html">
+                            <img src="" alt="" class="movieimage">
+                            <!-- <div class="info"> -->
+                            <!-- <p class="moviedesc"></p> -->
+                            <!-- <button class="watch">WATCH</button> -->
+                            <!-- </div> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="../JS/script.js"></script>
+    <script src="../data/index_movies.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+<script>
+    function func() {
+        location.href = "play.html";
+    }
+</script>
+
+</html>

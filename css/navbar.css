@@ -1,0 +1,176 @@
+/* STYLING OF THE NAVBAR */
+
+.wrapper::-webkit-scrollbar {
+  height: 9px;
+  width: 10px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+/* COLORS TO BE USED 
+  #05386B - Dark Blue
+  #379683 - Blue + Green
+  #5CDB95 - Lime
+  #8EF4AF - Light Lime
+  #EDF5E1 - Dark White
+  */
+
+.material-icons-outlined:hover {
+  color: black;
+}
+
+.navbar {
+  background-color: var(--nav-color);
+  display: flex;
+  justify-content: space-around;
+  height: 65px;
+  width: 100%;
+}
+
+.navbar .left img {
+  margin: 18px;
+  height: 35px;
+  width: 138px;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 65px;
+}
+.middle ul {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.middle ul li {
+  list-style-type: none;
+}
+
+.middle ul li a,
+.right a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.middle ul li a:after,
+.right a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--primary-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.middle ul li a:hover:after,
+.right a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.others {
+  display: none;
+}
+
+#active {
+  opacity: 1;
+}
+
+#inactive {
+  opacity: 0.45;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+#inactive:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  height: 65px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* CSS FOR SLIDER  */
+/* CSS OF SLIDER */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #222831;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #222831;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

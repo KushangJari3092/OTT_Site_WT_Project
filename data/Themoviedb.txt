@@ -1,0 +1,5 @@
+API for movie db 
+
+Key : f251c7bdac148d6e15351fa8fa6d66be
+
+Example Request : https://api.themoviedb.org/3/movie/550?api_key=f251c7bdac148d6e15351fa8fa6d66be
